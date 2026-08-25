@@ -13,7 +13,7 @@
 sif_path <- system.file(
   "extdata",
   "causalpath_causative_small.sif",
-  package = "rcausalpath"
+  package = "rcausalpath.render"
 )
 edges <- read_causalpath_sif(sif_path)
 }

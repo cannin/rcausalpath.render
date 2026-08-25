@@ -1,4 +1,4 @@
-Package: rcausalpath
+Package: rcausalpath.render
 Type: Package
 Title: Base R Plotting for CausalPath Networks
 Version: 0.2.0

@@ -17,12 +17,12 @@ format file with random colors and rendering a CausalPath network.
 ## Load data
 
 ```{r}
-library(rcausalpath)
+library(rcausalpath.render)
 
 sif_path <- system.file(
   "extdata",
   "causalpath_causative_small.sif",
-  package = "rcausalpath"
+  package = "rcausalpath.render"
 )
 ```
 

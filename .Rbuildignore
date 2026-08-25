@@ -1,6 +1,6 @@
 ^\.git$
 ^\.gitignore$
 ^\.DS_Store$
-^rcausalpath_.*\.tar\.gz$
-^rcausalpath\.Rcheck$
+^rcausalpath\.render_.*\.tar\.gz$
+^rcausalpath\.render\.Rcheck$
 ^\.Rcheck$

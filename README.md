@@ -1,6 +1,6 @@
-# rcausalpath
+# rcausalpath.render
 
-`rcausalpath` renders CausalPath SIF networks using base R graphics with optional
+`rcausalpath.render` renders CausalPath SIF networks using base R graphics with optional
 format-driven coloring and igraph layouts when available.
 
 ## Contents
@@ -13,9 +13,9 @@ format-driven coloring and igraph layouts when available.
 ## Quick start
 
 ```r
-library(rcausalpath)
+library(rcausalpath.render)
 
-sif_path <- system.file("extdata", "causalpath_causative_small.sif", package = "rcausalpath")
+sif_path <- system.file("extdata", "causalpath_causative_small.sif", package = "rcausalpath.render")
 format_path <- tempfile(fileext = "_format.tsv")
 
 write_format_file(sif_path, format_path)

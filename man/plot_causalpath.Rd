@@ -20,7 +20,7 @@
 sif_path <- system.file(
   "extdata",
   "causalpath_causative_small.sif",
-  package = "rcausalpath"
+  package = "rcausalpath.render"
 )
 format_path <- tempfile(fileext = "_format.tsv")
 write_format_file(sif_path, format_path)
