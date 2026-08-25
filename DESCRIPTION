@@ -1,0 +1,18 @@
+Package: rcausalpath
+Type: Package
+Title: Base R Plotting for CausalPath Networks
+Version: 0.2.0
+Authors@R: c(
+    person("Augustin", "Luna", role = c("aut", "cre"), email = "augustin@nih.gov")
+  )
+Author: Augustin Luna [aut, cre]
+Maintainer: Augustin Luna <augustin@nih.gov>
+Description: Render CausalPath SIF networks using base R graphics, including
+    phosphorylation and expression edges, optional format-driven coloring, and
+    force-directed layouts via igraph when available.
+License: Apache License (>= 2.0) | file LICENSE
+Encoding: UTF-8
+Suggests: igraph, knitr, rmarkdown
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3

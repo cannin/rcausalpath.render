@@ -1,0 +1,48 @@
+---
+title: "CausalPath Workflow"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{CausalPath Workflow}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+```
+
+This vignette mirrors the workflow from `run_draw_causalpath.R`, generating a
+format file with random colors and rendering a CausalPath network.
+
+## Load data
+
+```{r}
+library(rcausalpath)
+
+sif_path <- system.file(
+  "extdata",
+  "causalpath_causative_small.sif",
+  package = "rcausalpath"
+)
+```
+
+## Create a format TSV
+
+```{r}
+format_path <- tempfile(fileext = "_format.tsv")
+write_format_file(sif_path, format_path, seed = 42, value_min = -2, value_max = 2)
+format_path
+```
+
+## Render the network
+
+```{r}
+plot_causalpath(
+  input_sif = sif_path,
+  format_file = format_path,
+  layout_method = "layout_with_sugiyama"
+)
+```
+
+The function writes PNG and SVG outputs beside the input SIF by default. Use
+`output_png = NULL` or `output_svg = NULL` to skip a format.
